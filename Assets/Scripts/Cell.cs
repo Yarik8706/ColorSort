@@ -38,7 +38,18 @@ public class Cell : MonoBehaviour
         _levelControl = levelControl;
         Color = color;
         Position = new Vector2Int(x, y);
-        
+        baseScale = new Vector3(
+            GameManager.GamePlaceSize.x / _levelControl.currentlevelData.Col,
+            GameManager.GamePlaceSize.x / _levelControl.currentlevelData.Row,
+            1);
+        transform.localPosition = new Vector3(
+            x * (GameManager.GamePlaceSize.x
+                 / _levelControl.currentlevelData.Col
+            ) - GameManager.GamePlaceSize.x/2 + baseScale.x/2, 
+            y * (GameManager.GamePlaceSize.x 
+                 / _levelControl.currentlevelData.Row
+            ) - GameManager.GamePlaceSize.x/2 + baseScale.y/2, 
+            GameManager.GamePlaceSize.x);
         spriteRenderer.color = Color;
     }
 

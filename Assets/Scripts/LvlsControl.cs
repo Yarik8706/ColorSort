@@ -14,7 +14,7 @@ public class LvlsControl : MonoBehaviour
     [SerializeField] private Cell cellPrefab;
 
     public ActiveElement activeElement { get; private set; }
-    private float _betweenLvlsLenght = 10;
+    private float _betweenLvlsLenght = 12;
     private int _prefLvlIndex = 1;
 
     private void Start()
