@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe1710532e2f6e4ca3ec4899e116dba, type: 3}
+  m_Name: Level9
+  m_EditorClassIdentifier: 
+  BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  hasPassed: 1
+  TopLeftColor: {r: 0.745283, g: 0.29283994, b: 0.08718402, a: 1}
+  TopRightColor: {r: 0.7162833, g: 0.735849, b: 0.09996435, a: 1}
+  BottomLeftColor: {r: 0.05240294, g: 0.8679245, b: 0.8018011, a: 1}
+  BottomRightColor: {r: 0.4847632, g: 0.12990382, b: 0.8396226, a: 1}
+  Row: 7
+  Col: 7
+  LockedCells:
+  - {x: 0, y: 0}
+  - {x: 2, y: 0}
+  - {x: 4, y: 0}
+  - {x: 6, y: 0}
+  - {x: 0, y: 2}
+  - {x: 2, y: 2}
+  - {x: 4, y: 2}
+  - {x: 6, y: 2}
+  - {x: 0, y: 4}
+  - {x: 2, y: 4}
+  - {x: 4, y: 4}
+  - {x: 6, y: 4}
+  - {x: 0, y: 6}
+  - {x: 2, y: 6}
+  - {x: 4, y: 6}
+  - {x: 6, y: 6}
+  lockedCellsType: 0
+  lockedCellsVerticalLineTypes: 04000000000000000400000000000000040000000000000004000000
+  lockedCellsHorizontalLineTypes: 

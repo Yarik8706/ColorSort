@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe1710532e2f6e4ca3ec4899e116dba, type: 3}
+  m_Name: Level 22
+  m_EditorClassIdentifier: 
+  BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  hasPassed: 0
+  TopLeftColor: {r: 0.4988964, g: 0.16760412, b: 0.8301887, a: 1}
+  TopRightColor: {r: 0.8301887, g: 0.33288103, b: 0.104948364, a: 1}
+  BottomLeftColor: {r: 0.8165429, g: 0.8301887, b: 0.12061229, a: 1}
+  BottomRightColor: {r: 0.08522601, g: 0.7924528, b: 0.71765006, a: 1}
+  Row: 7
+  Col: 7
+  LockedCells:
+  - {x: 0, y: 0}
+  - {x: 6, y: 0}
+  - {x: 0, y: 6}
+  - {x: 6, y: 6}
+  lockedCellsType: 0
+  lockedCellsVerticalLineTypes: 01000000000000000000000000000000000000000000000001000000
+  lockedCellsHorizontalLineTypes: 
