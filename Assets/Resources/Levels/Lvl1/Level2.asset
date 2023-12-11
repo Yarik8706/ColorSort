@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
   hasPassed: 1
-  TopLeftColor: {r: 0.6862745, g: 0.07058824, b: 0.07058824, a: 1}
-  TopRightColor: {r: 0.6862745, g: 0.43137258, b: 0.07058824, a: 1}
-  BottomLeftColor: {r: 0.03529412, g: 0.43529415, b: 0.6862745, a: 1}
-  BottomRightColor: {r: 0, g: 0.6862745, b: 0.58431375, a: 1}
+  TopLeftColor: {r: 1, g: 0, b: 0, a: 1}
+  TopRightColor: {r: 1, g: 0.58598727, b: 0, a: 1}
+  BottomLeftColor: {r: 0, g: 0.61445785, b: 1, a: 1}
+  BottomRightColor: {r: 0, g: 1, b: 0.8514285, a: 1}
   Row: 5
   Col: 5
   LockedCells:

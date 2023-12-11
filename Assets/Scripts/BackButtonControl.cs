@@ -17,7 +17,7 @@ public class BackButtonControl : MonoBehaviour
 
     public void BackToMenu()
     {
-        GameManager.instance.BackToMenu();
+        GameManager.instance.BackToMenu(false,false);
     }
 
     public void SetGameState(bool isMenu)

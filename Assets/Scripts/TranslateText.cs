@@ -21,6 +21,11 @@ public class TranslateText : MonoBehaviour
         YandexGame.SwitchLangEvent += SwitchLanguage;
         SwitchLanguage(YandexGame.savesData.language);
     }
+    
+    public void TranslateTR()
+    {
+        trText = TranslateGoogle("tr", ruText);
+    }
 
     private void SwitchLanguage(string obj)
     {

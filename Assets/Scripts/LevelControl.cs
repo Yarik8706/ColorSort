@@ -48,6 +48,7 @@ public class LevelControl : MonoBehaviour
             canMove = true;
             if (CheckWin())
             {
+                hasGameStarted = false;
                 GameManager.instance.Win();
             }
             return;

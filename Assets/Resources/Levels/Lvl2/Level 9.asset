@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 9
   m_EditorClassIdentifier: 
   BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
-  hasPassed: 1
+  hasPassed: 0
   TopLeftColor: {r: 0.1137255, g: 0.6862745, b: 0.07058824, a: 1}
   TopRightColor: {r: 0.5372549, g: 0.6862745, b: 0.03529412, a: 1}
   BottomLeftColor: {r: 0.18039216, g: 0.10196079, b: 0.6862745, a: 1}

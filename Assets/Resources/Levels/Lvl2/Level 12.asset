@@ -23,8 +23,8 @@ MonoBehaviour:
   LockedCells:
   - {x: 0, y: 0}
   - {x: 5, y: 0}
-  - {x: 0, y: 6}
-  - {x: 5, y: 6}
+  - {x: 0, y: 5}
+  - {x: 5, y: 5}
   lockedCellsType: 0
   lockedCellsVerticalLineTypes: 010000000000000000000000000000000000000001000000
   lockedCellsHorizontalLineTypes: 

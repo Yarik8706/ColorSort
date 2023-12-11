@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Level5
   m_EditorClassIdentifier: 
   BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
-  hasPassed: 1
-  TopLeftColor: {r: 0.6313726, g: 0.454902, b: 0.11764707, a: 1}
-  TopRightColor: {r: 0.654902, g: 0.32941177, b: 0.1137255, a: 1}
-  BottomLeftColor: {r: 0.11764707, g: 0.6039216, b: 0.41960788, a: 1}
-  BottomRightColor: {r: 0.08235294, g: 0.3372549, b: 0.6862745, a: 1}
+  hasPassed: 0
+  TopLeftColor: {r: 1, g: 0.65648854, b: 0, a: 1}
+  TopRightColor: {r: 1, g: 0.39855075, b: 0, a: 1}
+  BottomLeftColor: {r: 0, g: 1, b: 0.6209676, a: 1}
+  BottomRightColor: {r: 0, g: 0.42207813, b: 1, a: 1}
   Row: 7
   Col: 7
   LockedCells:

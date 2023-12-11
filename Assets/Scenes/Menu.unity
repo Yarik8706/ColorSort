@@ -2958,7 +2958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0426\u0432\u0435\u0442\u043D\u043E\u0439 \u0445\u0430\u0443\u0441!"
+  m_text: "\u0426\u0432\u0435\u0442\u043D\u043E\u0439 \u0445\u0430\u043E\u0441!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e23b695bc41c45b45a1cc2bb25150bcb, type: 2}
   m_sharedMaterial: {fileID: -1381851430843113490, guid: e23b695bc41c45b45a1cc2bb25150bcb, type: 2}
@@ -3061,9 +3061,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yandexGame: {fileID: 1232442506}
-  ruText: "\u0426\u0432\u0435\u0442\u043D\u043E\u0439 \u0445\u0430\u0443\u0441!"
-  enText: Color chaos
-  trText: Renk kaosu
+  ruText: "\u0426\u0432\u0435\u0442\u043D\u043E\u0439 \u0445\u0430\u043E\u0441!"
+  enText: Color chaos!
+  trText: Renk kaosu!
 --- !u!1 &207988124
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,8 +3091,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207988124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -2.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.485, y: -2.5, z: 0}
+  m_LocalScale: {x: 1.03, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 176190411}

@@ -44,7 +44,7 @@ public class UIControl : MonoBehaviour
                 gameCount = (int) value;
                 gameCountText.text = gameCount.ToString();
             },
-            gameCount, gameCount + 10, 1f);
+            gameCount, gameCount + 10, 1f).Play();
     }
 
     public void ChangeUIElementsActive(bool isActive)

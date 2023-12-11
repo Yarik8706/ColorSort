@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+#if UNITY_EDITOR
+        YandexGame.ResetSaveProgress();
+#endif
         instance = this;
         StartCoroutine(LoadPassedLvlsName());
         DOTween.SetTweensCapacity(500, 50);
@@ -85,9 +88,13 @@ public class GameManager : MonoBehaviour
     public void Win()
     {
         HasGameFinished = true;
-        YandexGame.savesData.levelsData += _levelControl.currentlevelData.name + ";";
-        _levelControl.currentlevelData.hasPassed = true;
-        BackToMenu(true);
+        var isFirstWin = !_levelControl.currentlevelData.hasPassed;
+        if (!_levelControl.currentlevelData.hasPassed)
+        {
+            YandexGame.savesData.levelsData += _levelControl.currentlevelData.name + ";";
+            _levelControl.currentlevelData.hasPassed = true;
+        };
+        BackToMenu(true, isFirstWin);
     }
 
     public void ChangeLvlsDifficult(int newLvls)
@@ -111,7 +118,7 @@ public class GameManager : MonoBehaviour
         UIControl.Instance.ChangeUIStateWhenDifficultChanged(newLvls != -1);
     }
 
-    public void BackToMenu(bool isWin = false)
+    public void BackToMenu(bool isGame, bool isFirstWin)
     {
         if (_levelControl == null)
         {
@@ -123,8 +130,9 @@ public class GameManager : MonoBehaviour
         _levelControl.transform.DOScale(0.6f, 0.7f)
             .SetEase(Ease.OutExpo).Play().OnComplete(() =>
             {
-                if(!isWin) return;
+                if(!isGame) return;
                 startEffect.StartEffect();
+                if(!isFirstWin) return;
                 UIControl.Instance.UpdateGameCount();
             });
         _levelControl = null;
@@ -133,3 +141,33 @@ public class GameManager : MonoBehaviour
         lvlsControls[ActiveDifficultIndex].UpdateActive();
     }
 }
+
+public class Animal
+{
+    public string name;
+    public int age;
+
+    public virtual void AddOneToAge()
+    {
+        age++;
+    }
+}
+
+public class Cat : Animal
+{
+    Cat(string name, int age)
+    {
+        this.name = name;
+        this.age = age;
+        AddOneToAge();
+    }
+
+    public override void AddOneToAge()
+    {
+        age += 2;
+        base.AddOneToAge();
+    }
+}
+
+
+
