@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
-using Newtonsoft.Json.Linq;
 using TMPro;
+// using Unity.Plastic.Newtonsoft.Js/on.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 using YG;
@@ -68,8 +68,8 @@ public class TranslateText : MonoBehaviour
 
         try
         {
-            JArray jsonArray = JArray.Parse(response);
-            response = jsonArray[0][0][0].ToString();
+            // JArray jsonArray = JArray.Parse(response);
+            // response = jsonArray[0][0][0].ToString();
         }
         catch
         {

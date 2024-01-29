@@ -3,12 +3,14 @@ using UnityEngine;
 
 public class ActiveElement : MonoBehaviour
 {
+    [SerializeField] private bool startIsHidePos;
     [SerializeField] private Transform hidePosition;
     public Vector3 ActivePosition { get; set; }
 
     private void Start()
     {
         if(ActivePosition == Vector3.zero) ActivePosition = transform.position;
+        if (startIsHidePos) transform.position = hidePosition.position;
     }
 
     public Tween ChangeActive(bool isActive)
